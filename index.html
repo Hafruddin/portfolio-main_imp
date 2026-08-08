@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>Shaik Mohammad Hafruddin — Java Full Stack Developer Portfolio</title>
+  <title>Shaik Mohammad Hafruddin — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -14,7 +17,8 @@
       padding: 0;
     }
 
-    html, body {
+    html,
+    body {
       width: 100%;
       min-height: 100vh;
       background-color: #000000;
@@ -1004,6 +1008,7 @@
       .growaz-tailored-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
       .growaz-services-header {
         flex-direction: column;
         align-items: flex-start;
@@ -1212,24 +1217,31 @@
         flex-direction: column;
         gap: 32px;
       }
-      .hero-left, .hero-right {
+
+      .hero-left,
+      .hero-right {
         max-width: 100%;
       }
+
       .stats-top {
         grid-template-columns: 1fr;
         gap: 36px;
       }
+
       .about-grid {
         grid-template-columns: 1fr;
         gap: 36px;
       }
+
       .tailored-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
       }
+
       .contact-card-wrap {
         padding: 40px 28px;
       }
+
       .contact-title-wrap .lets-talk-box {
         position: relative;
         top: 0;
@@ -1242,47 +1254,58 @@
       header {
         padding: 18px 5%;
       }
+
       .nav-links {
         display: none;
       }
+
       .services-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px 16px;
         margin-top: 48px;
         padding: 24px;
       }
+
       .stats-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 32px;
       }
+
       .showcase-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
       }
+
       .tailored-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
       }
+
       .form-grid {
         grid-template-columns: 1fr;
         gap: 32px;
       }
+
       .brands-content {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
       }
+
       .brands-logos {
         gap: 24px;
       }
+
       .contact-title .row-sub {
         margin-left: 0;
         display: block;
       }
+
       .services-header {
         flex-direction: column;
         align-items: flex-start;
       }
+
       .connect-card {
         padding: 48px 24px;
       }
@@ -1292,14 +1315,17 @@
       .services-grid {
         grid-template-columns: 1fr;
       }
+
       .btn-orange {
         width: 100%;
         justify-content: center;
       }
+
       .connect-actions {
         flex-direction: column;
         width: 100%;
       }
+
       .connect-actions a {
         width: 100%;
         justify-content: center;
@@ -1311,13 +1337,16 @@
       width: 8px;
       height: 8px;
     }
+
     ::-webkit-scrollbar-track {
       background: #000000;
     }
+
     ::-webkit-scrollbar-thumb {
       background: rgba(255, 85, 0, 0.4);
       border-radius: 99px;
     }
+
     ::-webkit-scrollbar-thumb:hover {
       background: #ff5500;
     }
@@ -1326,6 +1355,7 @@
     .profile-card-glow {
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
     }
+
     .profile-card-glow:hover {
       transform: translateY(-8px) scale(1.02);
       border-color: rgba(255, 85, 0, 0.6) !important;
@@ -1337,12 +1367,14 @@
       filter: grayscale(30%) contrast(100%) brightness(95%);
       transition: filter 0.4s ease, transform 0.4s ease;
     }
+
     .showcase-card:hover img {
       filter: grayscale(0%) contrast(105%) brightness(100%);
       transform: scale(1.03);
     }
   </style>
 </head>
+
 <body>
 
   <!-- Minimal Loader -->
@@ -1381,13 +1413,21 @@
 
     <!-- Hero Section -->
     <section class="hero-section section-container" id="home">
-      <div class="hero-main-content" style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 40px; flex-wrap: wrap;">
+      <div class="hero-main-content"
+        style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 40px; flex-wrap: wrap;">
         <!-- Left Side Title -->
         <div class="hero-left" style="max-width: 60%; flex: 1 1 500px;">
-          <p class="hero-left-eyebrow" style="color: #ff5500; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px;">Hey, I'm</p>
-          <h1 class="hero-title" style="font-size: clamp(38px, 5.5vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: #ffffff;">Shaik Mohammad<br><span style="color: #ff5500;">Hafruddin</span></h1>
-          <p class="hero-desc-box" style="margin-top: 24px; font-size: 15px; line-height: 1.6; color: rgba(255, 255, 255, 0.75); max-width: 520px;">
-            Results-driven Java Full Stack Developer with expertise in web application design, RESTful API implementation, and user interface enhancements. Proven ability to create responsive, high-performance applications that elevate user experience.
+          <p class="hero-left-eyebrow"
+            style="color: #ff5500; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px;">
+            Hey, I'm</p>
+          <h1 class="hero-title"
+            style="font-size: clamp(38px, 5.5vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: #ffffff;">
+            Shaik Mohammad<br><span style="color: #ff5500;">Hafruddin</span></h1>
+          <p class="hero-desc-box"
+            style="margin-top: 24px; font-size: 15px; line-height: 1.6; color: rgba(255, 255, 255, 0.75); max-width: 520px;">
+            Results-driven Java Full Stack Developer with expertise in web application design, RESTful API
+            implementation, and user interface enhancements. Proven ability to create responsive, high-performance
+            applications that elevate user experience.
           </p>
           <div style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap;">
             <a href="#contact" class="btn-orange">Get in Touch <span class="btn-icon">➔</span></a>
@@ -1396,9 +1436,12 @@
         </div>
 
         <!-- Right Side: Portrait Image in beautiful card -->
-        <div class="hero-right" style="max-width: 320px; flex: 1 1 280px; padding: 0; display: flex; justify-content: center;">
-          <div class="profile-card-glow" style="position: relative; border-radius: 28px; padding: 12px; background: rgba(255, 85, 0, 0.08); border: 1px solid rgba(255, 85, 0, 0.2); box-shadow: 0 10px 45px rgba(255, 85, 0, 0.12); overflow: hidden;">
-            <img src="./images/profile.jpg" alt="Shaik Mohammad Hafruddin" style="width: 100%; max-width: 290px; border-radius: 20px; display: block;" />
+        <div class="hero-right"
+          style="max-width: 320px; flex: 1 1 280px; padding: 0; display: flex; justify-content: center;">
+          <div class="profile-card-glow"
+            style="position: relative; border-radius: 28px; padding: 12px; background: rgba(255, 85, 0, 0.08); border: 1px solid rgba(255, 85, 0, 0.2); box-shadow: 0 10px 45px rgba(255, 85, 0, 0.12); overflow: hidden;">
+            <img src="./images/profile.jpg" alt="Shaik Mohammad Hafruddin"
+              style="width: 100%; max-width: 290px; border-radius: 20px; display: block;" />
           </div>
         </div>
       </div>
@@ -1449,13 +1492,16 @@
             </div>
             <div class="social-pills">
               <a href="https://github.com/Hafruddin" class="social-pill active" target="_blank">GH</a>
-              <a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" class="social-pill secondary" target="_blank">IN</a>
+              <a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" class="social-pill secondary"
+                target="_blank">IN</a>
               <a href="mailto:skhafruddin33@gmail.com" class="social-pill secondary">✉</a>
             </div>
           </div>
           <div class="stats-right">
-            <p class="agency-headline" style="font-weight: 400; line-height: 1.35; font-size: clamp(20px, 2.5vw, 32px);">
-              Passionate about building <span class="highlight">robust backends with Spring Boot</span> and crafting <span class="highlight">dynamic, elegant interfaces</span> that enhance user experience.
+            <p class="agency-headline"
+              style="font-weight: 400; line-height: 1.35; font-size: clamp(20px, 2.5vw, 32px);">
+              Passionate about building <span class="highlight">robust backends with Spring Boot</span> and crafting
+              <span class="highlight">dynamic, elegant interfaces</span> that enhance user experience.
             </p>
           </div>
         </div>
@@ -1491,20 +1537,30 @@
       <div class="about-grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
         <div>
           <p class="eyebrow-orange">About Me</p>
-          <h2 class="about-heading" style="font-size: clamp(28px, 3.8vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -1px;">Shaik Mohammad<br>Hafruddin</h2>
-          <p style="margin-top: 24px; font-size: 14px; line-height: 1.6; color: rgba(255, 255, 255, 0.7); max-width: 500px;">
-            I'm a Java Full Stack Developer who enjoys bridging the gap between back-end infrastructure and modern UI. I specialize in designing robust web architectures, building secure and performant APIs with Spring Boot, and creating responsive front-ends using React. My goal is to build software that is both elegant and highly functional.
+          <h2 class="about-heading"
+            style="font-size: clamp(28px, 3.8vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -1px;">
+            Shaik Mohammad<br>Hafruddin</h2>
+          <p
+            style="margin-top: 24px; font-size: 14px; line-height: 1.6; color: rgba(255, 255, 255, 0.7); max-width: 500px;">
+            I'm a Java Full Stack Developer who enjoys bridging the gap between back-end infrastructure and modern UI. I
+            specialize in designing robust web architectures, building secure and performant APIs with Spring Boot, and
+            creating responsive front-ends using React. My goal is to build software that is both elegant and highly
+            functional.
           </p>
-          
+
           <div style="margin-top: 36px; display: flex; flex-direction: column; gap: 20px;">
             <div>
-              <h4 style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 6px;">Languages</h4>
+              <h4
+                style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 6px;">
+                Languages</h4>
               <p style="font-size: 14px; color: rgba(255, 255, 255, 0.85);">
                 English (C2 Proficient) • Telugu (Native) • Hindi (B2) • Tamil (B2)
               </p>
             </div>
             <div>
-              <h4 style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 6px;">Certifications</h4>
+              <h4
+                style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 6px;">
+                Certifications</h4>
               <p style="font-size: 14px; color: rgba(255, 255, 255, 0.85); line-height: 1.5;">
                 • Oracle Gen AI<br>
                 • Oracle Agentic AI Foundations<br>
@@ -1516,25 +1572,31 @@
 
         <div class="about-right" style="padding-top: 0; display: flex; flex-direction: column; gap: 24px;">
           <div>
-            <h4 style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 12px;">Education & Training</h4>
+            <h4
+              style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 12px;">
+              Education & Training</h4>
             <div style="display: flex; flex-direction: column; gap: 16px;">
               <div style="border-left: 2px solid rgba(255, 85, 0, 0.4); padding-left: 14px;">
                 <h5 style="font-size: 15px; font-weight: 700; color: #ffffff;">RMD Engineering College</h5>
-                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 2px;">Bachelor of Science | Chennai, India (Expected 05/2028)</p>
+                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 2px;">Bachelor of Science |
+                  Chennai, India (Expected 05/2028)</p>
               </div>
               <div style="border-left: 2px solid rgba(255, 85, 0, 0.2); padding-left: 14px;">
                 <h5 style="font-size: 15px; font-weight: 700; color: #ffffff;">SR Junior College</h5>
-                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 2px;">Intermediate | Nellore, Andhra Pradesh (Completed 06/2024)</p>
+                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 2px;">Intermediate | Nellore,
+                  Andhra Pradesh (Completed 06/2024)</p>
               </div>
               <div style="border-left: 2px solid rgba(255, 85, 0, 0.2); padding-left: 14px;">
                 <h5 style="font-size: 15px; font-weight: 700; color: #ffffff;">Netaji MSR High School</h5>
-                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 2px;">High School Diploma | Nellore, Andhra Pradesh (Completed 05/2022)</p>
+                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 2px;">High School Diploma |
+                  Nellore, Andhra Pradesh (Completed 05/2022)</p>
               </div>
             </div>
           </div>
-          
+
           <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px; margin-top: 10px;">
-            <p class="about-subtext" style="margin-bottom: 16px; font-weight: 600;">Let's Build Something Meaningful Together</p>
+            <p class="about-subtext" style="margin-bottom: 16px; font-weight: 600;">Let's Build Something Meaningful
+              Together</p>
             <a href="#contact" class="btn-orange">
               Get in touch
               <span class="btn-icon">➔</span>
@@ -1548,32 +1610,43 @@
     <section class="showcase-section section-container" id="projects">
       <div style="margin-bottom: 40px;">
         <p class="eyebrow-orange">My Portfolio</p>
-        <h2 class="about-heading" style="font-size: clamp(28px, 3.8vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -1px; margin-bottom: 12px;">Featured Projects</h2>
-        <p style="font-size: 14px; color: rgba(255, 255, 255, 0.6); max-width: 500px;">Click or hover on each project card to see developer details and implementations.</p>
+        <h2 class="about-heading"
+          style="font-size: clamp(28px, 3.8vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -1px; margin-bottom: 12px;">
+          Featured Projects</h2>
+        <p style="font-size: 14px; color: rgba(255, 255, 255, 0.6); max-width: 500px;">Click or hover on each project
+          card to see developer details and implementations.</p>
       </div>
       <div class="showcase-grid">
         <div class="showcase-card" style="cursor: pointer;" title="Hospital Management System - Click to view">
           <img src="./images/project_hospital.png" alt="Hospital Management System" />
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);">
+          <div
+            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);">
             <h4 style="color: #ff5500; font-size: 12px; font-weight: 700; margin-bottom: 4px;">WEB APPLICATION</h4>
             <h3 style="color: #ffffff; font-size: 20px; font-weight: 700;">Hospital Management System</h3>
-            <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 8px; line-height: 1.4;">Developed robust doctor/patient portals with React & Spring Boot.</p>
+            <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 8px; line-height: 1.4;">Developed
+              robust doctor/patient portals with React & Spring Boot.</p>
           </div>
         </div>
         <div class="showcase-card" style="cursor: pointer;" title="AI News Aggregator - Click to view">
           <img src="./images/project_news_aggregator.png" alt="AI News Aggregator" />
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);">
+          <div
+            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);">
             <h4 style="color: #ff5500; font-size: 12px; font-weight: 700; margin-bottom: 4px;">GEN AI / MOBILE APP</h4>
             <h3 style="color: #ffffff; font-size: 20px; font-weight: 700;">AI News Aggregator</h3>
-            <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 8px; line-height: 1.4;">A high-fidelity mobile news aggregator using Gen AI for real-time summarizing and personalized feeds.</p>
+            <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 8px; line-height: 1.4;">A high-fidelity
+              mobile news aggregator using Gen AI for real-time summarizing and personalized feeds.</p>
           </div>
         </div>
-        <div class="showcase-card" style="cursor: pointer;" title="Business AI & Stock Market Assistance - Click to view">
+        <div class="showcase-card" style="cursor: pointer;"
+          title="Business AI & Stock Market Assistance - Click to view">
           <img src="./images/project_msme.png" alt="Business AI and Stock Market Assistance" />
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);">
-            <h4 style="color: #ff5500; font-size: 12px; font-weight: 700; margin-bottom: 4px;">BUSINESS INTELLIGENCE</h4>
+          <div
+            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);">
+            <h4 style="color: #ff5500; font-size: 12px; font-weight: 700; margin-bottom: 4px;">BUSINESS INTELLIGENCE
+            </h4>
             <h3 style="color: #ffffff; font-size: 20px; font-weight: 700;">Business AI & Stock Market Assistance</h3>
-            <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 8px; line-height: 1.4;">Created smart sales projections and user engagement trackers.</p>
+            <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 8px; line-height: 1.4;">Created smart
+              sales projections and user engagement trackers.</p>
           </div>
         </div>
       </div>
@@ -1581,7 +1654,8 @@
 
     <!-- Contact Section -->
     <section class="contact-section section-container" id="contact">
-      <div class="contact-card-wrap" style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 32px;">
+      <div class="contact-card-wrap"
+        style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 32px;">
         <div class="contact-header">
           <div class="contact-title-wrap">
             <h2 class="contact-title">
@@ -1596,7 +1670,8 @@
           </div>
         </div>
 
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been simulated successfully.');">
+        <form class="contact-form"
+          onsubmit="event.preventDefault(); alert('Thank you! Your message has been simulated successfully.');">
           <div class="form-grid" style="grid-template-columns: repeat(2, 1fr); gap: 32px;">
             <!-- Row 1 -->
             <div class="form-group">
@@ -1611,7 +1686,9 @@
             <!-- Row 2 -->
             <div class="form-group" style="grid-column: span 2;">
               <label for="message">YOUR MESSAGE*</label>
-              <input type="text" id="message" placeholder="Hi Hafruddin, I would love to collaborate on a full-stack Java/React application..." required style="border-bottom: 1px solid rgba(255,255,255,0.25); padding: 12px 0; color: #ffffff;" />
+              <input type="text" id="message"
+                placeholder="Hi Hafruddin, I would love to collaborate on a full-stack Java/React application..."
+                required style="border-bottom: 1px solid rgba(255,255,255,0.25); padding: 12px 0; color: #ffffff;" />
             </div>
           </div>
 
@@ -1629,9 +1706,11 @@
     <section class="connect-section section-container" id="connect">
       <div class="connect-card">
         <span class="connect-eyebrow">HAVE AN OPPORTUNITY?</span>
-        <h2 class="connect-title">LET'S CONNECT &<br>BUILD SOMETHING<br><span class="serif-italic">extraordinary</span></h2>
-        <p class="connect-desc">Whether you're looking for a Java Full Stack Developer intern, API builder, or AI logic developer — I'm ready to contribute.</p>
-        
+        <h2 class="connect-title">LET'S CONNECT &<br>BUILD SOMETHING<br><span class="serif-italic">extraordinary</span>
+        </h2>
+        <p class="connect-desc">Whether you're looking for a Java Full Stack Developer intern, API builder, or AI logic
+          developer — I'm ready to contribute.</p>
+
         <div class="connect-actions">
           <a href="mailto:skhafruddin33@gmail.com" class="btn-orange btn-lg">
             Send an Email
@@ -1644,7 +1723,8 @@
 
         <div class="social-links-row">
           <a href="https://github.com/Hafruddin" class="social-link" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" class="social-link" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" class="social-link"
+            target="_blank">LinkedIn</a>
           <a href="mailto:skhafruddin33@gmail.com" class="social-link">Email</a>
         </div>
       </div>
@@ -1654,36 +1734,46 @@
     <section class="growaz-section section-container" id="experience" style="padding-top: 60px; padding-bottom: 60px;">
       <div style="margin-bottom: 40px; text-align: left;">
         <span class="growaz-eyebrow" style="margin-bottom: 12px;">Professional Journey</span>
-        <h2 class="growaz-services-headline" style="font-size: clamp(34px, 4.5vw, 54px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px;">
+        <h2 class="growaz-services-headline"
+          style="font-size: clamp(34px, 4.5vw, 54px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px;">
           Work<br><span class="serif-italic">Experience</span>
         </h2>
       </div>
 
-      <div style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 28px; padding: 48px;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+      <div
+        style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 28px; padding: 48px;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
           <div>
             <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Java Full Stack Developer Intern</h3>
-            <p style="font-size: 16px; color: #ff5500; font-weight: 600; margin-top: 4px;">Internship • Hyderabad, India</p>
+            <p style="font-size: 16px; color: #ff5500; font-weight: 600; margin-top: 4px;">Internship • Hyderabad, India
+            </p>
           </div>
-          <span style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 999px;">05/2026 - 06/2026</span>
+          <span
+            style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 999px;">05/2026
+            - 06/2026</span>
         </div>
-        
+
         <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 16px;">
           <div style="display: flex; gap: 12px; align-items: flex-start;">
             <span style="color: #ff5500; font-size: 16px;">✦</span>
-            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Developed interactive, high-fidelity user interfaces with ReactJS and Redux library to improve usability of web applications.</p>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Developed interactive,
+              high-fidelity user interfaces with ReactJS and Redux library to improve usability of web applications.</p>
           </div>
           <div style="display: flex; gap: 12px; align-items: flex-start;">
             <span style="color: #ff5500; font-size: 16px;">✦</span>
-            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Implemented secure and scalable RESTful APIs in Java to connect front-end components and back-end databases.</p>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Implemented secure and scalable
+              RESTful APIs in Java to connect front-end components and back-end databases.</p>
           </div>
           <div style="display: flex; gap: 12px; align-items: flex-start;">
             <span style="color: #ff5500; font-size: 16px;">✦</span>
-            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Enhanced user experience through clean UI designs, implementing responsive layout frameworks using HTML5, CSS3, and JavaScript.</p>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Enhanced user experience
+              through clean UI designs, implementing responsive layout frameworks using HTML5, CSS3, and JavaScript.</p>
           </div>
           <div style="display: flex; gap: 12px; align-items: flex-start;">
             <span style="color: #ff5500; font-size: 16px;">✦</span>
-            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Developed responsive, unit-tested web applications using Java and Spring Boot frameworks.</p>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Developed responsive,
+              unit-tested web applications using Java and Spring Boot frameworks.</p>
           </div>
         </div>
       </div>
@@ -1701,7 +1791,8 @@
         <!-- Brand Column -->
         <div class="footer-brand-col">
           <a href="#" class="footer-logo">Hafruddin</a>
-          <p class="footer-tagline">Java Full Stack Developer specializing in Spring Boot, REST APIs, ReactJS, and intelligent AI system integration. Based in Chennai, built for scale.</p>
+          <p class="footer-tagline">Java Full Stack Developer specializing in Spring Boot, REST APIs, ReactJS, and
+            intelligent AI system integration. Based in Chennai, built for scale.</p>
           <a href="mailto:skhafruddin33@gmail.com" class="footer-cta-btn">
             Send an Email
             <span class="btn-icon">➔</span>
@@ -1753,37 +1844,44 @@
         <div class="footer-socials">
 
           <!-- Instagram -->
-          <a href="https://www.instagram.com/__bunny__18x/?hl=en" class="footer-social-btn" aria-label="Instagram" title="Instagram" target="_blank">
+          <a href="https://www.instagram.com/__bunny__18x/?hl=en" class="footer-social-btn" aria-label="Instagram"
+            title="Instagram" target="_blank">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
             </svg>
           </a>
 
           <!-- Twitter / X -->
           <a href="#" class="footer-social-btn" aria-label="Twitter / X" title="Twitter / X">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
             </svg>
           </a>
 
           <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" class="footer-social-btn" aria-label="LinkedIn" title="LinkedIn" target="_blank">
+          <a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" class="footer-social-btn"
+            aria-label="LinkedIn" title="LinkedIn" target="_blank">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
           </a>
 
           <!-- Dribbble -->
           <a href="#" class="footer-social-btn" aria-label="Dribbble" title="Dribbble">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 6.628 5.374 12 12 12 6.627 0 12-5.372 12-12 0-6.627-5.373-12-12-12zm7.974 5.49a10.093 10.093 0 0 1 2.348 5.657c-.344-.066-3.786-.769-7.25-.332-.078-.192-.153-.39-.234-.583-.215-.527-.452-1.049-.694-1.558 3.801-1.548 5.537-3.778 5.83-4.184zM12 2.032a9.986 9.986 0 0 1 6.738 2.598c-.243.362-1.802 2.457-5.47 3.826C11.485 6.086 9.74 4.193 9.474 3.891A10.048 10.048 0 0 1 12 2.032zm-4.99 1.471c.258.297 1.978 2.188 3.768 4.476C6.148 9.163 2.99 9.148 2.65 9.14a10.037 10.037 0 0 1 4.36-5.637zm-4.91 8.49c0-.08.002-.16.004-.24.33.007 4.067.095 8.608-1.193.241.47.469.947.681 1.43-.109.032-.22.064-.33.1-4.693 1.514-7.19 5.65-7.407 6.027a9.956 9.956 0 0 1-1.556-6.124zm7.9 9.008a9.956 9.956 0 0 1-5.934-1.953c.174-.348 2.144-4.15 7.31-5.944.022-.007.044-.015.066-.022A48.74 48.74 0 0 1 13.7 18.88a9.97 9.97 0 0 1-3.7.12zm5.463-1.17a50.12 50.12 0 0 0-1.22-5.585c3.214-.514 6.033.326 6.382.433a10.017 10.017 0 0 1-5.162 5.152z"/>
+              <path
+                d="M12 0C5.374 0 0 5.373 0 12c0 6.628 5.374 12 12 12 6.627 0 12-5.372 12-12 0-6.627-5.373-12-12-12zm7.974 5.49a10.093 10.093 0 0 1 2.348 5.657c-.344-.066-3.786-.769-7.25-.332-.078-.192-.153-.39-.234-.583-.215-.527-.452-1.049-.694-1.558 3.801-1.548 5.537-3.778 5.83-4.184zM12 2.032a9.986 9.986 0 0 1 6.738 2.598c-.243.362-1.802 2.457-5.47 3.826C11.485 6.086 9.74 4.193 9.474 3.891A10.048 10.048 0 0 1 12 2.032zm-4.99 1.471c.258.297 1.978 2.188 3.768 4.476C6.148 9.163 2.99 9.148 2.65 9.14a10.037 10.037 0 0 1 4.36-5.637zm-4.91 8.49c0-.08.002-.16.004-.24.33.007 4.067.095 8.608-1.193.241.47.469.947.681 1.43-.109.032-.22.064-.33.1-4.693 1.514-7.19 5.65-7.407 6.027a9.956 9.956 0 0 1-1.556-6.124zm7.9 9.008a9.956 9.956 0 0 1-5.934-1.953c.174-.348 2.144-4.15 7.31-5.944.022-.007.044-.015.066-.022A48.74 48.74 0 0 1 13.7 18.88a9.97 9.97 0 0 1-3.7.12zm5.463-1.17a50.12 50.12 0 0 0-1.22-5.585c3.214-.514 6.033.326 6.382.433a10.017 10.017 0 0 1-5.162 5.152z" />
             </svg>
           </a>
 
           <!-- Behance -->
           <a href="#" class="footer-social-btn" aria-label="Behance" title="Behance">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.051-2.053-5.051-5.013 0-2.972 1.93-5.02 5.029-5.02 3.093 0 4.925 1.952 5.029 5.093H16.22c.08 1.45 1.02 2.063 2.084 2.063.526 0 1.08-.128 1.37-.5h3.052zM16.13 13.25H20.5c-.014-1.22-.861-1.934-2.124-1.934-1.265 0-2.132.717-2.245 1.934zM3.499 18.063h3.499c.814-.043 1.467-.586 1.467-1.542 0-.903-.508-1.505-1.467-1.515H3.5v3.057zm0-4.617h3.197c.807 0 1.307-.468 1.307-1.384 0-.88-.5-1.327-1.307-1.327H3.5v2.711zM0 21V6h6.803c2.28 0 4.007 1.222 4.007 3.451 0 1.243-.688 2.318-1.717 2.903 1.376.492 2.173 1.73 2.173 3.214C11.266 18.51 9.413 21 6.802 21H0z"/>
+              <path
+                d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.051-2.053-5.051-5.013 0-2.972 1.93-5.02 5.029-5.02 3.093 0 4.925 1.952 5.029 5.093H16.22c.08 1.45 1.02 2.063 2.084 2.063.526 0 1.08-.128 1.37-.5h3.052zM16.13 13.25H20.5c-.014-1.22-.861-1.934-2.124-1.934-1.265 0-2.132.717-2.245 1.934zM3.499 18.063h3.499c.814-.043 1.467-.586 1.467-1.542 0-.903-.508-1.505-1.467-1.515H3.5v3.057zm0-4.617h3.197c.807 0 1.307-.468 1.307-1.384 0-.88-.5-1.327-1.307-1.327H3.5v2.711zM0 21V6h6.803c2.28 0 4.007 1.222 4.007 3.451 0 1.243-.688 2.318-1.717 2.903 1.376.492 2.173 1.73 2.173 3.214C11.266 18.51 9.413 21 6.802 21H0z" />
             </svg>
           </a>
 
@@ -1894,7 +1992,7 @@
 
       function animate() {
         ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-        
+
         // Draw deep ambient background radial glow
         const gradient = ctx.createRadialGradient(
           window.innerWidth / 2, window.innerHeight / 2, 10,
@@ -1930,4 +2028,5 @@
     })();
   </script>
 </body>
+
 </html>
