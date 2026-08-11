@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>Shaik Mohammad Hafruddin — Portfolio</title>
+  <title>Shaik Mohammad Hafruddin | AI & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Shaik Mohammad Hafruddin, an AI & Full-Stack Developer building intelligent agentic systems, robust Spring Boot/MERN backends, and optimized solutions using LangGraph, LangChain, React, and DSA." />
+  <meta property="og:title" content="Shaik Mohammad Hafruddin | AI & Full-Stack Developer" />
+  <meta property="og:description" content="Portfolio of Shaik Mohammad Hafruddin, an AI & Full-Stack Developer building intelligent agentic systems, robust Spring Boot/MERN backends, and optimized solutions using LangGraph, LangChain, React, and DSA." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -1372,6 +1376,285 @@
       filter: grayscale(0%) contrast(105%) brightness(100%);
       transform: scale(1.03);
     }
+
+    /* ==========================================================================
+       AI ENGINEERING, TECH ECOSYSTEM, CATEGORIZED SKILLS & DSA STYLES
+       ========================================================================== */
+    .ai-engineering-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .ai-card {
+      background: rgba(12, 10, 10, 0.45);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 32px 28px;
+      transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ai-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 85, 0, 0.6);
+      box-shadow: 0 12px 40px rgba(255, 85, 0, 0.15);
+    }
+
+    .ai-card-glow {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 85, 0, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .ai-card:hover .ai-card-glow {
+      opacity: 1;
+    }
+
+    .ai-card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .ai-card-tag {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+      color: #ff5500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .ai-card-desc {
+      font-size: 14px;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Technology Ecosystem Flow */
+    .eco-flow-section {
+      margin-top: 60px;
+      background: rgba(10, 8, 8, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 32px;
+      padding: 48px;
+      position: relative;
+    }
+
+    .eco-flow-title {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .eco-flow-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      position: relative;
+    }
+
+    .eco-flow-layer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .eco-flow-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .eco-flow-pills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      max-width: 800px;
+    }
+
+    .eco-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .eco-pill:hover {
+      background: rgba(255, 85, 0, 0.08);
+      border-color: rgba(255, 85, 0, 0.4);
+      color: #ffffff;
+      box-shadow: 0 0 15px rgba(255, 85, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .eco-connector {
+      width: 2px;
+      height: 32px;
+      background: linear-gradient(180deg, #ff5500 0%, rgba(255, 85, 0, 0.1) 100%);
+      opacity: 0.6;
+    }
+
+    /* Skills Grid */
+    .skills-category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .skills-category-card {
+      background: rgba(12, 10, 10, 0.45);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 32px 24px;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .skills-category-card:hover {
+      border-color: rgba(255, 85, 0, 0.4);
+      transform: translateY(-3px);
+    }
+
+    .skills-category-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skills-category-icon {
+      color: #ff5500;
+    }
+
+    .skills-pill-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-pill {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.8);
+      transition: all 0.2s ease;
+    }
+
+    .skill-pill:hover {
+      background: rgba(255, 85, 0, 0.05);
+      border-color: rgba(255, 85, 0, 0.3);
+      color: #ffffff;
+    }
+
+    /* DSA Section */
+    .dsa-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .dsa-card {
+      background: rgba(12, 10, 10, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100px;
+    }
+
+    .dsa-card:hover {
+      border-color: rgba(255, 85, 0, 0.4);
+      background: rgba(255, 85, 0, 0.03);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 85, 0, 0.08);
+    }
+
+    .dsa-card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 4px;
+    }
+
+    .dsa-card-tag {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 10px;
+      color: #ff5500;
+      text-transform: uppercase;
+    }
+
+    /* Hero Badges */
+    .hero-badges-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .hero-badge {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
+      color: #ffffff;
+      background: rgba(255, 85, 0, 0.1);
+      border: 1px solid rgba(255, 85, 0, 0.3);
+      border-radius: 4px;
+      padding: 6px 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 0 10px rgba(255, 85, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .hero-badge:hover {
+      background: #ff5500;
+      color: #000000;
+      box-shadow: 0 0 15px rgba(255, 85, 0, 0.3);
+    }
   </style>
 </head>
 
@@ -1396,9 +1679,12 @@
     <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#ai-engineering">AI</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#dsa">DSA</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="#contact" class="btn-orange">
@@ -1416,22 +1702,27 @@
       <div class="hero-main-content"
         style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 40px; flex-wrap: wrap;">
         <!-- Left Side Title -->
-        <div class="hero-left" style="max-width: 60%; flex: 1 1 500px;">
-          <p class="hero-left-eyebrow"
-            style="color: #ff5500; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px;">
-            Hey, I'm</p>
+        <div class="hero-left" style="max-width: 65%; flex: 1 1 500px;">
+          <div class="hero-badges-container">
+            <span class="hero-badge">GENAI</span>
+            <span class="hero-badge">AGENTIC AI</span>
+            <span class="hero-badge">FULL STACK</span>
+            <span class="hero-badge">MACHINE LEARNING</span>
+            <span class="hero-badge">DSA</span>
+          </div>
           <h1 class="hero-title"
-            style="font-size: clamp(38px, 5.5vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: #ffffff;">
-            Shaik Mohammad<br><span style="color: #ff5500;">Hafruddin</span></h1>
+            style="font-size: clamp(38px, 5.5vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: #ffffff; text-transform: uppercase; margin-top: 10px;">
+            Hey, I'm<br><span style="color: #ff5500;">Shaik Mohammad Hafruddin</span></h1>
           <p class="hero-desc-box"
-            style="margin-top: 24px; font-size: 15px; line-height: 1.6; color: rgba(255, 255, 255, 0.75); max-width: 520px;">
-            Results-driven Java Full Stack Developer with expertise in web application design, RESTful API
-            implementation, and user interface enhancements. Proven ability to create responsive, high-performance
-            applications that elevate user experience.
+            style="margin-top: 24px; font-size: 15px; line-height: 1.6; color: rgba(255, 255, 255, 0.75); max-width: 550px;">
+            <strong>Building intelligent products with Generative AI, Agentic AI, modern full-stack technologies, and scalable backend systems.</strong>
+            <br><br>
+            I build intelligent, scalable, and user-focused applications by combining AI/GenAI, machine learning, full-stack development, APIs, databases, and modern software engineering.
           </p>
           <div style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap;">
-            <a href="#contact" class="btn-orange">Get in Touch <span class="btn-icon">➔</span></a>
-            <a href="#about" class="btn-pill-dark">About Me</a>
+            <a href="#projects" class="btn-orange">View My Work <span class="btn-icon">➔</span></a>
+            <a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" target="_blank" class="btn-pill-dark">Download Resume</a>
+            <a href="#contact" class="btn-pill-dark">Let's Connect</a>
           </div>
         </div>
 
@@ -1450,19 +1741,19 @@
       <div class="services-grid">
         <div class="service-item">
           <span class="service-num">#01</span>
-          <span class="service-title">Java & Spring Boot</span>
+          <span class="service-title">AI & GenAI Systems</span>
         </div>
         <div class="service-item">
           <span class="service-num">#02</span>
-          <span class="service-title">ReactJS & Redux UI</span>
+          <span class="service-title">Full-Stack Development</span>
         </div>
         <div class="service-item">
           <span class="service-num">#03</span>
-          <span class="service-title">RESTful API Design</span>
+          <span class="service-title">Backend Architecture</span>
         </div>
         <div class="service-item">
           <span class="service-num">#04</span>
-          <span class="service-title">AI Agent Frameworks</span>
+          <span class="service-title">Problem Solving / DSA</span>
         </div>
       </div>
     </section>
@@ -1470,38 +1761,174 @@
     <!-- Tech Stack Strip -->
     <section class="brands-section">
       <div class="section-container brands-content">
-        <p class="brands-label" style="max-width: 200px;">Core Technologies</p>
-        <div class="brands-logos">
-          <div class="brand-logo"><span class="brand-icon">☕</span> Java</div>
-          <div class="brand-logo"><span class="brand-icon">🍃</span> Spring Boot</div>
-          <div class="brand-logo"><span class="brand-icon">⚛️</span> ReactJS</div>
-          <div class="brand-logo"><span class="brand-icon">💾</span> PostgreSQL</div>
-          <div class="brand-logo"><span class="brand-icon">🤖</span> Oracle Gen AI</div>
+        <p class="brands-label" style="max-width: 200px;">Core Domains</p>
+        <div class="brands-logos" style="font-family: 'Share Tech Mono', monospace; font-size: 14px; font-weight: 600; text-transform: uppercase;">
+          <div class="brand-logo" style="color: #ff5500;">GenAI</div>
+          <div class="brand-logo" style="color: rgba(255,255,255,0.4);">•</div>
+          <div class="brand-logo" style="color: #ff5500;">Agentic AI</div>
+          <div class="brand-logo" style="color: rgba(255,255,255,0.4);">•</div>
+          <div class="brand-logo" style="color: #ff5500;">Full Stack</div>
+          <div class="brand-logo" style="color: rgba(255,255,255,0.4);">•</div>
+          <div class="brand-logo" style="color: #ff5500;">Machine Learning</div>
+          <div class="brand-logo" style="color: rgba(255,255,255,0.4);">•</div>
+          <div class="brand-logo" style="color: #ff5500;">DSA</div>
+        </div>
+      </div>
+      <!-- Behind the Designs Section (About Me) -->
+    <section class="about-section section-container" id="about">
+      <div class="about-grid" style="grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: start;">
+        <div>
+          <p class="eyebrow-orange">About Me</p>
+          <h2 class="about-heading"
+            style="font-size: clamp(28px, 3.8vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -1px; margin-bottom: 24px;">
+            Shaik Mohammad Hafruddin</h2>
+          <p
+            style="font-size: 15px; line-height: 1.7; color: rgba(255, 255, 255, 0.75); max-width: 600px;">
+            I'm an AI and Full-Stack Developer passionate about building intelligent applications that combine modern AI capabilities with reliable software engineering.
+            <br><br>
+            My interests span Generative AI, Agentic AI, LangChain, LangGraph, LangSmith, RAG systems, Machine Learning, and full-stack development using both Java/Spring Boot and the MERN stack.
+            <br><br>
+            I enjoy turning ideas into practical products — from AI-powered applications and intelligent agents to scalable APIs, responsive web applications, and data-driven systems.
+            <br><br>
+            Alongside development, I continuously strengthen my Data Structures & Algorithms and problem-solving skills to build efficient, scalable solutions.
+          </p>
+
+          <div style="margin-top: 36px;">
+            <h4
+              style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 8px;">
+              Languages Known</h4>
+            <p style="font-size: 14px; color: rgba(255, 255, 255, 0.85); font-family: 'Share Tech Mono', monospace; font-weight: 600;">
+              English • Telugu • Hindi • Tamil
+            </p>
+          </div>
+        </div>
+
+        <div class="about-right" style="padding-top: 0; display: flex; flex-direction: column; gap: 24px;">
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 36px 28px; backdrop-filter: blur(10px);">
+            <h4 style="font-size: 13px; font-weight: 700; color: #ff5500; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; font-family: 'Share Tech Mono', monospace;">
+              Developer Profile
+            </h4>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+              <div>
+                <span style="font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 4px;">Primary Role</span>
+                <span style="font-size: 15px; font-weight: 700; color: #ffffff;">AI Engineer & Full-Stack Developer</span>
+              </div>
+              <div>
+                <span style="font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 4px;">Core Focus</span>
+                <span style="font-size: 15px; font-weight: 700; color: #ffffff;">Intelligent Agent Workflows, RAG, Spring Boot, React</span>
+              </div>
+              <div>
+                <span style="font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 4px;">Academic Background</span>
+                <span style="font-size: 15px; font-weight: 700; color: #ffffff;">B.Tech in Artificial Intelligence & Machine Learning (AIML)</span>
+              </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 24px; margin-top: 24px;">
+              <p class="about-subtext" style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.4; margin-bottom: 20px;">
+                Looking to build high-performance backend systems combined with state-of-the-art AI features.
+              </p>
+              <a href="#contact" class="btn-orange" style="width: 100%; justify-content: center;">
+                Let's Build Together
+                <span class="btn-icon">➔</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Developer Stats & Credentials Section -->
-    <section class="stats-section section-container" id="skills">
-      <div class="stats-card">
+    <!-- AI Engineering Section -->
+    <section class="about-section section-container" id="ai-engineering" style="padding-top: 60px; padding-bottom: 60px;">
+      <div style="margin-bottom: 40px; text-align: left;">
+        <span class="growaz-eyebrow" style="margin-bottom: 12px;">Competency Core</span>
+        <h2 class="growaz-services-headline"
+          style="font-size: clamp(34px, 4.5vw, 54px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px;">
+          AI<br><span class="serif-italic">Engineering</span>
+        </h2>
+        <p style="font-size: 15px; color: rgba(255, 255, 255, 0.6); max-width: 600px; margin-top: 12px; line-height: 1.5;">
+          Building state-of-the-art intelligent systems. I specialize in orchestrating large language models, structured agent reasoning, semantic memory retrieval, and predictive analytics.
+        </p>
+      </div>
+
+      <div class="ai-engineering-grid">
+        <div class="ai-card">
+          <div class="ai-card-glow"></div>
+          <span class="ai-card-tag">Agentic AI</span>
+          <h3 class="ai-card-title">AI Agents</h3>
+          <p class="ai-card-desc">Building autonomous systems that reason, use external tools, and execute complex multi-step tasks.</p>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-glow"></div>
+          <span class="ai-card-tag">LangGraph</span>
+          <h3 class="ai-card-title">LangGraph</h3>
+          <p class="ai-card-desc">Designing stateful, cyclic, and multi-step AI agent workflows with robust coordination.</p>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-glow"></div>
+          <span class="ai-card-tag">LangChain</span>
+          <h3 class="ai-card-title">LangChain</h3>
+          <p class="ai-card-desc">Orchestrating LLM-powered applications, prompt chaining, and tool integrations.</p>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-glow"></div>
+          <span class="ai-card-tag">LangSmith</span>
+          <h3 class="ai-card-title">LangSmith</h3>
+          <p class="ai-card-desc">Tracing, debugging, monitoring, and evaluating LLM application runs for production readiness.</p>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-glow"></div>
+          <span class="ai-card-tag">Semantic Search</span>
+          <h3 class="ai-card-title">RAG Systems</h3>
+          <p class="ai-card-desc">Connecting LLMs with external document knowledge databases for accurate, grounded responses.</p>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-glow"></div>
+          <span class="ai-card-tag">Foundation Models</span>
+          <h3 class="ai-card-title">LLM Applications</h3>
+          <p class="ai-card-desc">Deploying Generative AI applications using Gemini, GPT, Llama, and customized system prompts.</p>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-glow"></div>
+          <span class="ai-card-tag">Analytics</span>
+          <h3 class="ai-card-title">Machine Learning</h3>
+          <p class="ai-card-desc">Implementing classic regression, classification, clustering, and dataset optimization pipelines.</p>
+        </div>
+
+        <div class="ai-card">
+          <div class="ai-card-glow"></div>
+          <span class="ai-card-tag">Deep Learning</span>
+          <h3 class="ai-card-title">NLP & Neural Nets</h3>
+          <p class="ai-card-desc">Working with neural network architectures, text preprocessing, tokenization, and embeddings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer Stats Card + Categorized Skills Section -->
+    <section class="stats-section section-container" id="skills-section" style="padding-top: 60px; padding-bottom: 60px;">
+      <!-- Stats summary card -->
+      <div class="stats-card" style="margin-bottom: 48px;">
         <div class="stats-top">
           <div class="stats-left">
             <div class="hub-tag">
               <span class="hub-icon">🌐</span>
-              <span class="hub-text">Full Stack Developer Intern based in Chennai, India</span>
+              <span class="hub-text">AI & Full-Stack Developer based in Chennai, India</span>
             </div>
             <div class="social-pills">
               <a href="https://github.com/Hafruddin" class="social-pill active" target="_blank">GH</a>
-              <a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" class="social-pill secondary"
-                target="_blank">IN</a>
-              <a href="mailto:skhafruddin33@gmail.com" class="social-pill secondary">✉</a>
+              <a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" class="social-pill active"
+                target="_blank">LN</a>
+              <a href="mailto:skhafruddin33@gmail.com" class="social-pill active">✉</a>
             </div>
           </div>
           <div class="stats-right">
             <p class="agency-headline"
               style="font-weight: 400; line-height: 1.35; font-size: clamp(20px, 2.5vw, 32px);">
-              Passionate about building <span class="highlight">robust backends with Spring Boot</span> and crafting
-              <span class="highlight">dynamic, elegant interfaces</span> that enhance user experience.
+              Passionate about building <span class="highlight">intelligent AI applications</span>, designing <span class="highlight">robust Spring Boot & MERN backend services</span>, and crafting <span class="highlight">dynamic web interfaces</span>.
             </p>
           </div>
         </div>
@@ -1515,145 +1942,567 @@
             <div class="stat-line"></div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">3</div>
+            <div class="stat-number">12</div>
             <div class="stat-label">
-              <span class="dot-orange"></span> Oracle Certifications
+              <span class="dot-orange"></span> Professional Certifications
             </div>
             <div class="stat-line"></div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">C2</div>
+            <div class="stat-number">4</div>
             <div class="stat-label">
-              <span class="dot-orange"></span> English Proficiency
+              <span class="dot-orange"></span> Languages Known
             </div>
             <div class="stat-line"></div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Behind the Designs Section -->
-    <section class="about-section section-container" id="about">
-      <div class="about-grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-        <div>
-          <p class="eyebrow-orange">About Me</p>
-          <h2 class="about-heading"
-            style="font-size: clamp(28px, 3.8vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -1px;">
-            Shaik Mohammad<br>Hafruddin</h2>
-          <p
-            style="margin-top: 24px; font-size: 14px; line-height: 1.6; color: rgba(255, 255, 255, 0.7); max-width: 500px;">
-            I'm a Java Full Stack Developer who enjoys bridging the gap between back-end infrastructure and modern UI. I
-            specialize in designing robust web architectures, building secure and performant APIs with Spring Boot, and
-            creating responsive front-ends using React. My goal is to build software that is both elegant and highly
-            functional.
-          </p>
+      <div style="margin-bottom: 40px; text-align: left;">
+        <span class="growaz-eyebrow" style="margin-bottom: 12px;">Technical Capability</span>
+        <h2 class="growaz-services-headline"
+          style="font-size: clamp(34px, 4.5vw, 54px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px;">
+          Skills &<br><span class="serif-italic">Technologies</span>
+        </h2>
+      </div>
 
-          <div style="margin-top: 36px; display: flex; flex-direction: column; gap: 20px;">
-            <div>
-              <h4
-                style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 6px;">
-                Languages</h4>
-              <p style="font-size: 14px; color: rgba(255, 255, 255, 0.85);">
-                English (C2 Proficient) • Telugu (Native) • Hindi (B2) • Tamil (B2)
-              </p>
-            </div>
-            <div>
-              <h4
-                style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 6px;">
-                Certifications</h4>
-              <p style="font-size: 14px; color: rgba(255, 255, 255, 0.85); line-height: 1.5;">
-                • Oracle Gen AI<br>
-                • Oracle Agentic AI Foundations<br>
-                • Oracle Cloud Foundations
-              </p>
-            </div>
+      <div class="skills-category-grid">
+        <!-- Category 1: GenAI & Agentic AI -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="skills-category-icon">🤖</span> Generative & Agentic AI
+          </h3>
+          <div class="skills-pill-wrap">
+            <span class="skill-pill">Generative AI</span>
+            <span class="skill-pill">LLM Applications</span>
+            <span class="skill-pill">LangChain</span>
+            <span class="skill-pill">LangGraph</span>
+            <span class="skill-pill">LangSmith</span>
+            <span class="skill-pill">RAG Systems</span>
+            <span class="skill-pill">AI Agents</span>
+            <span class="skill-pill">Prompt Engineering</span>
+            <span class="skill-pill">Vector Search</span>
+            <span class="skill-pill">Embeddings</span>
+            <span class="skill-pill">Multi-Agent Systems</span>
+            <span class="skill-pill">AI App Development</span>
           </div>
         </div>
 
-        <div class="about-right" style="padding-top: 0; display: flex; flex-direction: column; gap: 24px;">
-          <div>
-            <h4
-              style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 12px;">
-              Education & Training</h4>
-            <div style="display: flex; flex-direction: column; gap: 16px;">
-              <div style="border-left: 2px solid rgba(255, 85, 0, 0.4); padding-left: 14px;">
-                <h5 style="font-size: 15px; font-weight: 700; color: #ffffff;">RMD Engineering College</h5>
-                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 2px;">Bachelor of Science |
-                  Chennai, India (Expected 05/2028)</p>
-              </div>
-              <div style="border-left: 2px solid rgba(255, 85, 0, 0.2); padding-left: 14px;">
-                <h5 style="font-size: 15px; font-weight: 700; color: #ffffff;">SR Junior College</h5>
-                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 2px;">Intermediate | Nellore,
-                  Andhra Pradesh (Completed 06/2024)</p>
-              </div>
-              <div style="border-left: 2px solid rgba(255, 85, 0, 0.2); padding-left: 14px;">
-                <h5 style="font-size: 15px; font-weight: 700; color: #ffffff;">Netaji MSR High School</h5>
-                <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 2px;">High School Diploma |
-                  Nellore, Andhra Pradesh (Completed 05/2022)</p>
-              </div>
+        <!-- Category 2: Machine Learning & AI -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="skills-category-icon">🧠</span> Machine Learning & AI
+          </h3>
+          <div class="skills-pill-wrap">
+            <span class="skill-pill">Machine Learning</span>
+            <span class="skill-pill">Deep Learning</span>
+            <span class="skill-pill">NLP</span>
+            <span class="skill-pill">Neural Networks</span>
+            <span class="skill-pill">Data Preprocessing</span>
+            <span class="skill-pill">Model Evaluation</span>
+            <span class="skill-pill">Feature Engineering</span>
+            <span class="skill-pill">Python AI Ecosystem</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Full Stack Development -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="skills-category-icon">⚛️</span> Full Stack Development
+          </h3>
+          <div class="skills-pill-wrap">
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">HTML5 / CSS3</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Express.js</span>
+            <span class="skill-pill">MERN Stack</span>
+            <span class="skill-pill">RESTful APIs</span>
+            <span class="skill-pill">Redux UI</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Java Backend -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="skills-category-icon">☕</span> Java Backend
+          </h3>
+          <div class="skills-pill-wrap">
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">Spring Boot</span>
+            <span class="skill-pill">Spring Framework</span>
+            <span class="skill-pill">REST API Dev</span>
+            <span class="skill-pill">Backend Architecture</span>
+            <span class="skill-pill">API Integration</span>
+          </div>
+        </div>
+
+        <!-- Category 5: Databases -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="skills-category-icon">💾</span> Databases & Storage
+          </h3>
+          <div class="skills-pill-wrap">
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Database Design</span>
+          </div>
+        </div>
+
+        <!-- Category 6: Programming & Problem Solving -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="skills-category-icon">🧩</span> Problem Solving & DSA
+          </h3>
+          <div class="skills-pill-wrap">
+            <span class="skill-pill">Data Structures</span>
+            <span class="skill-pill">Algorithms</span>
+            <span class="skill-pill">Problem Solving</span>
+            <span class="skill-pill">Object-Oriented Programming (OOP)</span>
+            <span class="skill-pill">Competitive Programming</span>
+          </div>
+        </div>
+
+        <!-- Category 7: Developer Tools -->
+        <div class="skills-category-card">
+          <h3 class="skills-category-title">
+            <span class="skills-category-icon">🛠️</span> Developer Tools
+          </h3>
+          <div class="skills-pill-wrap">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Postman / API Tools</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technology Ecosystem Flow (Visualization) -->
+      <div class="eco-flow-section">
+        <h3 class="eco-flow-title">Technology Ecosystem Flow</h3>
+        <div class="eco-flow-container">
+          <!-- Layer 1: AI / GenAI -->
+          <div class="eco-flow-layer">
+            <span class="eco-flow-label">AI / GenAI Layer</span>
+            <div class="eco-flow-pills">
+              <span class="eco-pill">🧠 LangChain</span>
+              <span class="eco-pill">🕸️ LangGraph</span>
+              <span class="eco-pill">🔍 LangSmith</span>
+              <span class="eco-pill">📂 RAG Systems</span>
+              <span class="eco-pill">🤖 LLMs</span>
             </div>
           </div>
-
-          <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px; margin-top: 10px;">
-            <p class="about-subtext" style="margin-bottom: 16px; font-weight: 600;">Let's Build Something Meaningful
-              Together</p>
-            <a href="#contact" class="btn-orange">
-              Get in touch
-              <span class="btn-icon">➔</span>
-            </a>
+          <div class="eco-connector"></div>
+          <!-- Layer 2: Application Layer -->
+          <div class="eco-flow-layer">
+            <span class="eco-flow-label">Application Layer</span>
+            <div class="eco-flow-pills">
+              <span class="eco-pill">⚛️ React</span>
+              <span class="eco-pill">🟢 Node.js</span>
+              <span class="eco-pill">🍃 Spring Boot</span>
+              <span class="eco-pill">🔌 REST APIs</span>
+              <span class="eco-pill">🌐 Express.js</span>
+            </div>
           </div>
+          <div class="eco-connector"></div>
+          <!-- Layer 3: Data Layer -->
+          <div class="eco-flow-layer">
+            <span class="eco-flow-label">Data Layer</span>
+            <div class="eco-flow-pills">
+              <span class="eco-pill">🍃 MongoDB</span>
+              <span class="eco-pill">🐘 PostgreSQL</span>
+              <span class="eco-pill">📊 SQL</span>
+            </div>
+          </div>
+          <div class="eco-connector"></div>
+          <!-- Layer 4: Engineering -->
+          <div class="eco-flow-layer">
+            <span class="eco-flow-label">Engineering & Core</span>
+            <div class="eco-flow-pills">
+              <span class="eco-pill">🐙 Git / GitHub</span>
+              <span class="eco-pill">🧩 Data Structures</span>
+              <span class="eco-pill">⚡ Algorithms</span>
+              <span class="eco-pill">🏛️ Software Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DSA & Problem Solving Section -->
+    <section class="about-section section-container" id="dsa" style="padding-top: 60px; padding-bottom: 60px;">
+      <div style="margin-bottom: 40px; text-align: left;">
+        <span class="growaz-eyebrow" style="margin-bottom: 12px;">Computer Science Core</span>
+        <h2 class="growaz-services-headline"
+          style="font-size: clamp(34px, 4.5vw, 54px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px;">
+          Problem<br><span class="serif-italic">Solving</span>
+        </h2>
+        <p style="font-size: 15px; color: rgba(255, 255, 255, 0.6); max-width: 600px; margin-top: 12px; line-height: 1.5;">
+          Strong foundation in Data Structures, Algorithms, and problem solving. Dedicated to writing optimized, well-structured, and highly efficient code.
+        </p>
+      </div>
+
+      <div class="dsa-grid">
+        <div class="dsa-card">
+          <span class="dsa-card-title">Arrays</span>
+          <span class="dsa-card-tag">Linear DS</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Strings</span>
+          <span class="dsa-card-tag">Sequence DS</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Linked Lists</span>
+          <span class="dsa-card-tag">Linear DS</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Stacks & Queues</span>
+          <span class="dsa-card-tag">Linear DS</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Trees</span>
+          <span class="dsa-card-tag">Hierarchical DS</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Heaps</span>
+          <span class="dsa-card-tag">Priority Queue</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Hashing</span>
+          <span class="dsa-card-tag">O(1) Access</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Recursion</span>
+          <span class="dsa-card-tag">Core Concept</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Sorting & Searching</span>
+          <span class="dsa-card-tag">Algorithms</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Dynamic Programming</span>
+          <span class="dsa-card-tag">Optimization</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Greedy Algorithms</span>
+          <span class="dsa-card-tag">Optimization</span>
+        </div>
+        <div class="dsa-card">
+          <span class="dsa-card-title">Graphs</span>
+          <span class="dsa-card-tag">Non-Linear DS</span>
         </div>
       </div>
     </section>
 
     <!-- Showcase Cards Grid -->
-    <section class="showcase-section section-container" id="projects">
+    <section class="showcase-section section-container" id="projects" style="padding-top: 60px; padding-bottom: 60px;">
       <div style="margin-bottom: 40px;">
         <p class="eyebrow-orange">My Portfolio</p>
         <h2 class="about-heading"
           style="font-size: clamp(28px, 3.8vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -1px; margin-bottom: 12px;">
           Featured Projects</h2>
-        <p style="font-size: 14px; color: rgba(255, 255, 255, 0.6); max-width: 500px;">Click or hover on each project
-          card to see developer details and implementations.</p>
+        <p style="font-size: 14px; color: rgba(255, 255, 255, 0.6); max-width: 500px;">Explore my work across GenAI, full-stack, machine learning, and automation.</p>
       </div>
-      <div class="showcase-grid">
-        <div class="showcase-card" style="cursor: pointer;" title="Hospital Management System - Click to view">
-          <img src="./images/project_hospital.png" alt="Hospital Management System" />
-          <div
-            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);">
-            <h4 style="color: #ff5500; font-size: 12px; font-weight: 700; margin-bottom: 4px;">WEB APPLICATION</h4>
-            <h3 style="color: #ffffff; font-size: 20px; font-weight: 700;">Hospital Management System</h3>
-            <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 8px; line-height: 1.4;">Developed
-              robust doctor/patient portals with React & Spring Boot.</p>
+
+      <div class="showcase-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px;">
+
+        <!-- Project 1: Business AI Assistant -->
+        <div class="showcase-card" style="display: flex; flex-direction: column; aspect-ratio: auto; min-height: 540px; border-radius: 24px; overflow: hidden; background: rgba(15, 15, 15, 0.35); border: 1px solid rgba(255,255,255,0.12);">
+          <div style="height: 200px; overflow: hidden; position: relative;">
+            <img src="./images/project_msme.png" alt="Business AI and Stock Market Assistance" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.8); border: 1px solid #ff5500; color: #ffffff; font-family: 'Share Tech Mono', monospace; font-size: 10px; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">AI / GENAI</span>
+          </div>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; background: rgba(15, 15, 15, 0.45); backdrop-filter: blur(10px);">
+            <div>
+              <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin-bottom: 10px;">Business AI & Stock Market Assistance</h3>
+
+              <div style="margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px;">
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">GENAI</span>
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">RAG</span>
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">LANGGRAPH</span>
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">LANGCHAIN</span>
+              </div>
+
+              <p style="color: rgba(255,255,255,0.9); font-size: 13.5px; line-height: 1.5; margin-bottom: 8px;">
+                <strong>Problem:</strong> Businesses struggle to analyze documents, automate workflows, and extract actionable business insights from stock & sales datasets.
+              </p>
+              <p style="color: rgba(255,255,255,0.7); font-size: 13.5px; line-height: 1.5; margin-bottom: 16px;">
+                <strong>Solution:</strong> An AI-powered business assistant designed to help businesses automate document analysis, customer support, business insights, and operational workflows.
+              </p>
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06);">
+              <a href="https://github.com/Hafruddin" target="_blank" class="btn-orange" style="padding: 8px 16px; font-size: 12px; text-decoration: none; border-radius: 8px;">GitHub</a>
+              <a href="#contact" class="btn-pill-dark" style="padding: 8px 16px; font-size: 12px; text-decoration: none; border-radius: 8px; background: rgba(255,255,255,0.08); color: #ffffff;">Live Demo</a>
+            </div>
           </div>
         </div>
-        <div class="showcase-card" style="cursor: pointer;" title="AI News Aggregator - Click to view">
-          <img src="./images/project_news_aggregator.png" alt="AI News Aggregator" />
-          <div
-            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);">
-            <h4 style="color: #ff5500; font-size: 12px; font-weight: 700; margin-bottom: 4px;">GEN AI / MOBILE APP</h4>
-            <h3 style="color: #ffffff; font-size: 20px; font-weight: 700;">AI News Aggregator</h3>
-            <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 8px; line-height: 1.4;">A high-fidelity
-              mobile news aggregator using Gen AI for real-time summarizing and personalized feeds.</p>
+
+        <!-- Project 2: AI News Aggregator -->
+        <div class="showcase-card" style="display: flex; flex-direction: column; aspect-ratio: auto; min-height: 540px; border-radius: 24px; overflow: hidden; background: rgba(15, 15, 15, 0.35); border: 1px solid rgba(255,255,255,0.12);">
+          <div style="height: 200px; overflow: hidden; position: relative;">
+            <img src="./images/project_news_aggregator.png" alt="AI News Aggregator" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.8); border: 1px solid #ff5500; color: #ffffff; font-family: 'Share Tech Mono', monospace; font-size: 10px; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">GEN AI / MOBILE</span>
+          </div>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; background: rgba(15, 15, 15, 0.45); backdrop-filter: blur(10px);">
+            <div>
+              <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin-bottom: 10px;">AI News Aggregator</h3>
+
+              <div style="margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px;">
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">GENAI</span>
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">RAG</span>
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">NLP</span>
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">REACT NATIVE</span>
+              </div>
+
+              <p style="color: rgba(255,255,255,0.9); font-size: 13.5px; line-height: 1.5; margin-bottom: 8px;">
+                <strong>Problem:</strong> Readers face information overload from news sources, leading to a loss of time and difficulty finding customized summaries.
+              </p>
+              <p style="color: rgba(255,255,255,0.7); font-size: 13.5px; line-height: 1.5; margin-bottom: 16px;">
+                <strong>Solution:</strong> A high-fidelity mobile news aggregator using Generative AI for real-time summarizing, keyword extracting, and personalized news feeds.
+              </p>
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06);">
+              <a href="https://github.com/Hafruddin" target="_blank" class="btn-orange" style="padding: 8px 16px; font-size: 12px; text-decoration: none; border-radius: 8px;">GitHub</a>
+              <a href="#contact" class="btn-pill-dark" style="padding: 8px 16px; font-size: 12px; text-decoration: none; border-radius: 8px; background: rgba(255,255,255,0.08); color: #ffffff;">Live Demo</a>
+            </div>
           </div>
         </div>
-        <div class="showcase-card" style="cursor: pointer;"
-          title="Business AI & Stock Market Assistance - Click to view">
-          <img src="./images/project_msme.png" alt="Business AI and Stock Market Assistance" />
-          <div
-            style="position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);">
-            <h4 style="color: #ff5500; font-size: 12px; font-weight: 700; margin-bottom: 4px;">BUSINESS INTELLIGENCE
-            </h4>
-            <h3 style="color: #ffffff; font-size: 20px; font-weight: 700;">Business AI & Stock Market Assistance</h3>
-            <p style="color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 8px; line-height: 1.4;">Created smart
-              sales projections and user engagement trackers.</p>
+
+        <!-- Project 3: Hospital Management System -->
+        <div class="showcase-card" style="display: flex; flex-direction: column; aspect-ratio: auto; min-height: 540px; border-radius: 24px; overflow: hidden; background: rgba(15, 15, 15, 0.35); border: 1px solid rgba(255,255,255,0.12);">
+          <div style="height: 200px; overflow: hidden; position: relative;">
+            <img src="./images/project_hospital.png" alt="Hospital Management System" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.8); border: 1px solid #ff5500; color: #ffffff; font-family: 'Share Tech Mono', monospace; font-size: 10px; padding: 4px 10px; border-radius: 4px; text-transform: uppercase;">FULL STACK</span>
+          </div>
+          <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; background: rgba(15, 15, 15, 0.45); backdrop-filter: blur(10px);">
+            <div>
+              <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin-bottom: 10px;">Hospital Management System</h3>
+
+              <div style="margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px;">
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">JAVA</span>
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">SPRING BOOT</span>
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">REACT</span>
+                <span style="background: rgba(255, 85, 0, 0.15); color: #ff5500; font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">MONGODB</span>
+              </div>
+
+              <p style="color: rgba(255,255,255,0.9); font-size: 13.5px; line-height: 1.5; margin-bottom: 8px;">
+                <strong>Problem:</strong> Medical staff and patient coordination are often disjointed, leading to schedule delays and bad data tracking.
+              </p>
+              <p style="color: rgba(255,255,255,0.7); font-size: 13.5px; line-height: 1.5; margin-bottom: 16px;">
+                <strong>Solution:</strong> Robust doctor/patient portal web app with schedule logs, check-in flows, secure role management, and database synchronization.
+              </p>
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06);">
+              <a href="https://github.com/Hafruddin" target="_blank" class="btn-orange" style="padding: 8px 16px; font-size: 12px; text-decoration: none; border-radius: 8px;">GitHub</a>
+              <a href="#contact" class="btn-pill-dark" style="padding: 8px 16px; font-size: 12px; text-decoration: none; border-radius: 8px; background: rgba(255,255,255,0.08); color: #ffffff;">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section class="growaz-section section-container" id="experience" style="padding-top: 60px; padding-bottom: 60px;">
+      <div style="margin-bottom: 40px; text-align: left;">
+        <span class="growaz-eyebrow" style="margin-bottom: 12px;">Professional Journey</span>
+        <h2 class="growaz-services-headline"
+          style="font-size: clamp(34px, 4.5vw, 54px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px;">
+          Work<br><span class="serif-italic">Experience</span>
+        </h2>
+      </div>
+
+      <!-- Experience 1: Charani Infotech -->
+      <div
+        style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 28px; padding: 48px;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Java Full Stack Developer Intern</h3>
+            <p style="font-size: 16px; color: #ff5500; font-weight: 600; margin-top: 4px;">Charani Infotech Pvt. Ltd. • Hyderabad, India</p>
+            <p style="font-size: 13.5px; color: rgba(255,255,255,0.6); font-family: 'Share Tech Mono', monospace; margin-top: 6px;">Technologies: React, Java, Spring Boot, REST APIs, Redux</p>
+          </div>
+          <span
+            style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 999px;">05/2026 - 06/2026</span>
+        </div>
+
+        <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Developed responsive full-stack applications using React, Java, Spring Boot, and REST APIs.</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Implemented backend services and API integrations for scalable, high-performance web applications.</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Worked with modern frontend architecture, state management with Redux, and reusable React components.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience 2: Oasis Infobyte -->
+      <div
+        style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 28px; padding: 48px; margin-top: 32px;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Web Development & Designing Intern</h3>
+            <p style="font-size: 16px; color: #ff5500; font-weight: 600; margin-top: 4px;">Oasis Infobyte • Virtual</p>
+            <p style="font-size: 13.5px; color: rgba(255,255,255,0.6); font-family: 'Share Tech Mono', monospace; margin-top: 6px;">Technologies: HTML5, CSS3, JavaScript, UI/UX Mockups</p>
+          </div>
+          <span
+            style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 999px;">06/2025 - 07/2025</span>
+        </div>
+
+        <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Designed and developed responsive front-end landing pages and interactive web interfaces using HTML, CSS, and JavaScript.</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Worked on UI/UX mockups, enhancing site accessibility, user flow, and layout consistency across multiple device sizes.</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Implemented clean, structured, and modular coding standards to construct highly reusable UI components.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience 3: CodSoft -->
+      <div
+        style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 28px; padding: 48px; margin-top: 32px;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Artificial Intelligence Intern</h3>
+            <p style="font-size: 16px; color: #ff5500; font-weight: 600; margin-top: 4px;">CodSoft • Virtual</p>
+            <p style="font-size: 13.5px; color: rgba(255,255,255,0.6); font-family: 'Share Tech Mono', monospace; margin-top: 6px;">Technologies: Python, Machine Learning, Deep Learning, NLP, Preprocessing</p>
+          </div>
+          <span
+            style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 999px;">06/2025 - 07/2025</span>
+        </div>
+
+        <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Built and trained machine learning and deep learning models in Python for intelligent systems automation.</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Designed clean data preprocessing pipelines, resolving class imbalances, and optimizing dataset features.</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Explored and implemented core AI concepts including neural networks, NLP text tokenization, and search algorithms.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience 4: CodeAlpha -->
+      <div
+        style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 28px; padding: 48px; margin-top: 32px;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Python Programming Intern</h3>
+            <p style="font-size: 16px; color: #ff5500; font-weight: 600; margin-top: 4px;">CodeAlpha • Virtual</p>
+            <p style="font-size: 13.5px; color: rgba(255,255,255,0.6); font-family: 'Share Tech Mono', monospace; margin-top: 6px;">Technologies: Python, Pandas, NumPy, OOP, Exception Handling</p>
+          </div>
+          <span
+            style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 999px;">06/2025 - 07/2025</span>
+        </div>
+
+        <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Developed interactive Python command-line utility tools and automation scripts to optimize workflows.</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Utilized fundamental libraries such as Pandas and NumPy for structured data parsing, processing, and analysis.</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: #ff5500; font-size: 16px;">✦</span>
+            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Implemented clean code architecture adhering to object-oriented programming principles and robust handling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section class="about-section section-container" id="education-certs" style="padding-top: 60px; padding-bottom: 60px;">
+      <div style="margin-bottom: 40px; text-align: left;">
+        <span class="growaz-eyebrow" style="margin-bottom: 12px;">Credentials & Academics</span>
+        <h2 class="growaz-services-headline"
+          style="font-size: clamp(34px, 4.5vw, 54px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px;">
+          Education &<br><span class="serif-italic">Certifications</span>
+        </h2>
+      </div>
+
+      <div class="about-grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+        <!-- Left Side: Certifications -->
+        <div style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 28px; padding: 40px; min-height: 480px;">
+          <h4
+            style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 20px; font-family: 'Share Tech Mono', monospace;">
+            Professional Certifications</h4>
+          <p style="font-size: 14px; color: rgba(255, 255, 255, 0.85); line-height: 1.7;">
+            • Oracle Certified Associate – Agentic AI Foundations<br>
+            • Oracle Certified Professional – Generative AI<br>
+            • Oracle Cloud Infrastructure Foundations<br>
+            • NPTEL Elite Certification – Industry 4.0 & IIoT (IIT Kharagpur)<br>
+            • TCS iON Career Edge – Young Professional<br>
+            • be10x – AI Tools & ChatGPT Workshop<br>
+            • HP LIFE – AI for Beginners<br>
+            • School of Leadership – Internship Bootcamp (StartupIndia & MSME)<br>
+            • Simplilearn SkillUp – Introduction to Artificial Intelligence<br>
+            • Infosys Springboard – Programming Using C++<br>
+            • NPTEL Online Certification – Data Base Management System (IIT Kharagpur)<br>
+            • NPTEL Online Certification – Soft Skill Development
+          </p>
+        </div>
+
+        <!-- Right Side: Education & Training -->
+        <div style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 28px; padding: 40px; min-height: 480px;">
+          <h4
+            style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 20px; font-family: 'Share Tech Mono', monospace;">
+            Education & Training</h4>
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <div style="border-left: 2px solid rgba(255, 85, 0, 0.4); padding-left: 14px;">
+              <h5 style="font-size: 16px; font-weight: 700; color: #ffffff;">RMD Engineering College</h5>
+              <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 4px; line-height: 1.4;">
+                Bachelor of Technology (AIML)<br>
+                Chennai, India (Expected 05/2028)
+              </p>
+            </div>
+            <div style="border-left: 2px solid rgba(255, 85, 0, 0.2); padding-left: 14px;">
+              <h5 style="font-size: 16px; font-weight: 700; color: #ffffff;">SR Junior College</h5>
+              <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 4px; line-height: 1.4;">
+                Intermediate<br>
+                Nellore, Andhra Pradesh (Completed 06/2024)
+              </p>
+            </div>
+            <div style="border-left: 2px solid rgba(255, 85, 0, 0.2); padding-left: 14px;">
+              <h5 style="font-size: 16px; font-weight: 700; color: #ffffff;">Netaji MSR High School</h5>
+              <p style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 4px; line-height: 1.4;">
+                High School<br>
+                Nellore, Andhra Pradesh (Completed 05/2022)
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section section-container" id="contact">
+    <section class="contact-section section-container" id="contact" style="padding-top: 60px; padding-bottom: 60px;">
       <div class="contact-card-wrap"
         style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 32px;">
         <div class="contact-header">
@@ -1661,11 +2510,11 @@
             <h2 class="contact-title">
               <span class="row-top">LET'S BUILD</span>
               <span class="row-grow" style="color: #ff5500;">SOMETHING</span>
-              <span class="row-sub">GREAT TOGETHER</span>
+              <span class="row-sub">INTELLIGENT TOGETHER</span>
             </h2>
             <div class="lets-talk-box">
               <span class="lets-talk-tag">GET IN TOUCH</span>
-              <p class="lets-talk-desc">Have a question or want to discuss a full-stack project? Drop a message!</p>
+              <p class="lets-talk-desc">Whether you're looking for an AI solution, full-stack application, intelligent automation, or scalable backend system — let's build something meaningful.</p>
             </div>
           </div>
         </div>
@@ -1687,7 +2536,7 @@
             <div class="form-group" style="grid-column: span 2;">
               <label for="message">YOUR MESSAGE*</label>
               <input type="text" id="message"
-                placeholder="Hi Hafruddin, I would love to collaborate on a full-stack Java/React application..."
+                placeholder="Hi Hafruddin, I would love to collaborate on an AI or Full-Stack project..."
                 required style="border-bottom: 1px solid rgba(255,255,255,0.25); padding: 12px 0; color: #ffffff;" />
             </div>
           </div>
@@ -1703,13 +2552,12 @@
     </section>
 
     <!-- Let's Connect Section -->
-    <section class="connect-section section-container" id="connect">
+    <section class="connect-section section-container" id="connect" style="padding-top: 60px; padding-bottom: 60px;">
       <div class="connect-card">
         <span class="connect-eyebrow">HAVE AN OPPORTUNITY?</span>
         <h2 class="connect-title">LET'S CONNECT &<br>BUILD SOMETHING<br><span class="serif-italic">extraordinary</span>
         </h2>
-        <p class="connect-desc">Whether you're looking for a Java Full Stack Developer intern, API builder, or AI logic
-          developer — I'm ready to contribute.</p>
+        <p class="connect-desc">Whether you're looking for an AI developer, full-stack engineer, or scalable API builder — I'm ready to contribute.</p>
 
         <div class="connect-actions">
           <a href="mailto:skhafruddin33@gmail.com" class="btn-orange btn-lg">
@@ -1730,55 +2578,6 @@
       </div>
     </section>
 
-    <!-- Professional Experience Section -->
-    <section class="growaz-section section-container" id="experience" style="padding-top: 60px; padding-bottom: 60px;">
-      <div style="margin-bottom: 40px; text-align: left;">
-        <span class="growaz-eyebrow" style="margin-bottom: 12px;">Professional Journey</span>
-        <h2 class="growaz-services-headline"
-          style="font-size: clamp(34px, 4.5vw, 54px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px;">
-          Work<br><span class="serif-italic">Experience</span>
-        </h2>
-      </div>
-
-      <div
-        style="background: rgba(12, 10, 10, 0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 28px; padding: 48px;">
-        <div
-          style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
-          <div>
-            <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Java Full Stack Developer Intern</h3>
-            <p style="font-size: 16px; color: #ff5500; font-weight: 600; margin-top: 4px;">Internship • Hyderabad, India
-            </p>
-          </div>
-          <span
-            style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 999px;">05/2026
-            - 06/2026</span>
-        </div>
-
-        <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 16px;">
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <span style="color: #ff5500; font-size: 16px;">✦</span>
-            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Developed interactive,
-              high-fidelity user interfaces with ReactJS and Redux library to improve usability of web applications.</p>
-          </div>
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <span style="color: #ff5500; font-size: 16px;">✦</span>
-            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Implemented secure and scalable
-              RESTful APIs in Java to connect front-end components and back-end databases.</p>
-          </div>
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <span style="color: #ff5500; font-size: 16px;">✦</span>
-            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Enhanced user experience
-              through clean UI designs, implementing responsive layout frameworks using HTML5, CSS3, and JavaScript.</p>
-          </div>
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <span style="color: #ff5500; font-size: 16px;">✦</span>
-            <p style="font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.85);">Developed responsive,
-              unit-tested web applications using Java and Spring Boot frameworks.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- Premium Footer -->
@@ -1791,8 +2590,7 @@
         <!-- Brand Column -->
         <div class="footer-brand-col">
           <a href="#" class="footer-logo">Hafruddin</a>
-          <p class="footer-tagline">Java Full Stack Developer specializing in Spring Boot, REST APIs, ReactJS, and
-            intelligent AI system integration. Based in Chennai, built for scale.</p>
+          <p class="footer-tagline">AI & Full-Stack Developer specializing in Generative AI, Agentic Workflows, Spring Boot, REST APIs, React, and databases. Based in Chennai, built for scale.</p>
           <a href="mailto:skhafruddin33@gmail.com" class="footer-cta-btn">
             Send an Email
             <span class="btn-icon">➔</span>
@@ -1805,20 +2603,23 @@
             <h4>Navigation</h4>
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#skills">Skills</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#skills-section">Skills</a></li>
+              <li><a href="#ai-engineering">AI</a></li>
               <li><a href="#projects">Projects</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#dsa">DSA</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-nav-col">
             <h4>Expertise</h4>
             <ul>
-              <li><a href="#">Spring Boot APIs</a></li>
-              <li><a href="#">ReactJS Front-end</a></li>
-              <li><a href="#">Oracle Gen AI</a></li>
-              <li><a href="#">Database Design</a></li>
-              <li><a href="#">System Integrations</a></li>
+              <li><a href="#ai-engineering">AI & GenAI Agents</a></li>
+              <li><a href="#skills-section">React & MERN Stack</a></li>
+              <li><a href="#skills-section">Spring Boot APIs</a></li>
+              <li><a href="#skills-section">Databases & SQL</a></li>
+              <li><a href="#dsa">DSA & Problem Solving</a></li>
             </ul>
           </div>
           <div class="footer-nav-col">
@@ -1828,6 +2629,10 @@
               <li><a href="https://www.linkedin.com/in/hafruddin-shaik-49a97a337/" target="_blank">LinkedIn</a></li>
               <li><a href="mailto:skhafruddin33@gmail.com">Email</a></li>
               <li><a href="tel:7702044450">Phone</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>         <li><a href="tel:7702044450">Phone</a></li>
             </ul>
           </div>
         </div>
