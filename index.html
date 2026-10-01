@@ -1653,7 +1653,203 @@
     .hero-badge:hover {
       background: #ff5500;
       color: #000000;
-      box-shadow: 0 0 15px rgba(255, 85, 0, 0.3);
+    /* ==========================================================================
+       CERTIFICATE LIGHTBOX & EYE BUTTON STYLES
+       ========================================================================== */
+    .cert-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 7px 12px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .cert-item:hover {
+      background: rgba(255, 85, 0, 0.05);
+      border-color: rgba(255, 85, 0, 0.3);
+      transform: translateX(3px);
+    }
+
+    .cert-item-text {
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, 0.88);
+      line-height: 1.4;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cert-item-bullet {
+      color: #ff5500;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .cert-eye-btn {
+      background: rgba(255, 85, 0, 0.12);
+      border: 1px solid rgba(255, 85, 0, 0.35);
+      color: #ff5500;
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      flex-shrink: 0;
+    }
+
+    .cert-eye-btn:hover {
+      background: #ff5500;
+      color: #ffffff;
+      transform: scale(1.15);
+      box-shadow: 0 0 14px rgba(255, 85, 0, 0.6);
+      border-color: #ff5500;
+    }
+
+    .cert-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .cert-modal.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .cert-modal-dialog {
+      background: #0d0b0b;
+      border: 1px solid rgba(255, 85, 0, 0.35);
+      border-radius: 24px;
+      max-width: 880px;
+      width: 100%;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.9), 0 0 50px rgba(255, 85, 0, 0.18);
+      animation: certModalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes certModalPop {
+      from {
+        transform: scale(0.94);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .cert-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .cert-modal-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      letter-spacing: -0.3px;
+    }
+
+    .cert-modal-close {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.8);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 1;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .cert-modal-close:hover {
+      background: #ff5500;
+      color: #ffffff;
+      transform: rotate(90deg);
+      border-color: #ff5500;
+    }
+
+    .cert-modal-body {
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #050404;
+      min-height: 280px;
+    }
+
+    .cert-modal-body img {
+      max-width: 100%;
+      max-height: 65vh;
+      object-fit: contain;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .cert-placeholder-card {
+      padding: 40px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cert-modal-footer {
+      padding: 12px 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.02);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.6);
+      flex-wrap: wrap;
+      gap: 8px;
     }
   </style>
 </head>
@@ -2361,21 +2557,137 @@
           <h4
             style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 20px; font-family: 'Share Tech Mono', monospace;">
             Professional Certifications</h4>
-          <p style="font-size: 14px; color: rgba(255, 255, 255, 0.85); line-height: 1.7;">
-            • Oracle Database SQL Certified Associate<br>
-            • Oracle Certified Associate – Agentic AI Foundations<br>
-            • Oracle Certified Professional – Generative AI<br>
-            • Oracle Cloud Infrastructure Foundations<br>
-            • NPTEL Elite Certification – Industry 4.0 & IIoT (IIT Kharagpur)<br>
-            • TCS iON Career Edge – Young Professional<br>
-            • be10x – AI Tools & ChatGPT Workshop<br>
-            • HP LIFE – AI for Beginners<br>
-            • School of Leadership – Internship Bootcamp (StartupIndia & MSME)<br>
-            • Simplilearn SkillUp – Introduction to Artificial Intelligence<br>
-            • Infosys Springboard – Programming Using C++<br>
-            • NPTEL Online Certification – Data Base Management System (IIT Kharagpur)<br>
-            • NPTEL Online Certification – Soft Skill Development
-          </p>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                Oracle Database SQL Certified Associate
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('Oracle Database SQL Certified Associate', './images/certificates/oracle_sql.jpg', '103515961OCASQL12C', 'Oracle Corporation')" title="View Certificate" aria-label="View Oracle Database SQL Certified Associate">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                Oracle Certified Associate – Agentic AI Foundations
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('Oracle Certified Associate – Agentic AI Foundations', './images/certificates/oracle_agentic_ai.jpg', '102292531AAI26OFA', 'Oracle Corporation')" title="View Certificate" aria-label="View Oracle Certified Associate – Agentic AI Foundations">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                Oracle Certified Professional – Generative AI
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('Oracle Certified Professional – Generative AI', './images/certificates/oracle_genai.jpg', '102292531OCI25GAIOCP', 'Oracle Corporation')" title="View Certificate" aria-label="View Oracle Certified Professional – Generative AI">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                Oracle Cloud Infrastructure Foundations
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('Oracle Cloud Infrastructure Foundations', './images/certificates/oracle_genai.jpg', 'Oracle Certified', 'Oracle University')" title="View Certificate" aria-label="View Oracle Cloud Infrastructure Foundations">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                NPTEL Elite Certification – Industry 4.0 & IIoT (IIT Kharagpur)
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('NPTEL Elite Certification – Industry 4.0 & IIoT (IIT Kharagpur)', './images/certificates/nptel_industry4.png', 'NPTEL26CS38S1550306757', 'IIT Kharagpur & NPTEL')" title="View Certificate" aria-label="View NPTEL Elite Certification">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                TCS iON Career Edge – Young Professional
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('TCS iON Career Edge – Young Professional', '', 'TCS iON Certified', 'Tata Consultancy Services')" title="View Certificate" aria-label="View TCS iON Career Edge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                be10x – AI Tools & ChatGPT Workshop
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('be10x – AI Tools & ChatGPT Workshop', '', 'be10x Certified', 'be10x')" title="View Certificate" aria-label="View be10x Workshop">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                HP LIFE – AI for Beginners
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('HP LIFE – AI for Beginners', '', 'HP LIFE Certified', 'HP Foundation')" title="View Certificate" aria-label="View HP LIFE Certificate">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                School of Leadership – Internship Bootcamp (StartupIndia & MSME)
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('School of Leadership – Internship Bootcamp (StartupIndia & MSME)', './images/certificates/school_of_leadership.jpg', 'Bootcamp 2025', 'Government of India / StartupIndia')" title="View Certificate" aria-label="View School of Leadership Certificate">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                Simplilearn SkillUp – Introduction to Artificial Intelligence
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('Simplilearn SkillUp – Introduction to Artificial Intelligence', './images/certificates/simplilearn_ai.png', '8481836', 'Simplilearn SkillUp')" title="View Certificate" aria-label="View Simplilearn SkillUp Certificate">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                Infosys Springboard – Programming Using C++
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('Infosys Springboard – Programming Using C++', '', 'Infosys Verified', 'Infosys Springboard')" title="View Certificate" aria-label="View Infosys Springboard Certificate">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                NPTEL Online Certification – Data Base Management System (IIT Kharagpur)
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('NPTEL Online Certification – Data Base Management System (IIT Kharagpur)', '', 'NOC25CS145S533204091', 'IIT Kharagpur & NPTEL')" title="View Certificate" aria-label="View NPTEL DBMS Certificate">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                NPTEL Online Certification – Soft Skill Development
+              </span>
+              <button class="cert-eye-btn" onclick="openCertModal('NPTEL Online Certification – Soft Skill Development', './images/certificates/nptel_soft_skills.png', 'NPTEL25HS72S543302979', 'IIT Kharagpur & NPTEL')" title="View Certificate" aria-label="View NPTEL Soft Skills Certificate">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+          </ul>
         </div>
 
         <!-- Right Side: Education & Training -->
@@ -2739,6 +3051,114 @@
       init();
       animate();
     })();
+  </script>
+
+  <!-- Certificate Lightbox Modal -->
+  <div id="certModal" class="cert-modal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="cert-modal-dialog">
+      <div class="cert-modal-header">
+        <h3 class="cert-modal-title" id="certModalTitle">Certificate of Recognition</h3>
+        <button class="cert-modal-close" onclick="closeCertModal()" aria-label="Close Certificate View">&times;</button>
+      </div>
+      <div class="cert-modal-body">
+        <img id="certModalImg" src="" alt="Certificate Preview" style="display: none;" />
+        <div id="certModalPlaceholder" class="cert-placeholder-card" style="display: none;">
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: rgba(255, 85, 0, 0.15); border: 2px solid #ff5500; display: flex; align-items: center; justify-content: center; font-size: 28px; margin-bottom: 8px;">
+            🎓
+          </div>
+          <h4 id="placeholderCertTitle" style="color: #ffffff; font-size: 18px; font-weight: 700; margin: 0;">Verified Credential</h4>
+          <p id="placeholderCertIssuer" style="color: #ff5500; font-family: 'Share Tech Mono', monospace; font-size: 13px; margin: 0;">Verified Official Organization</p>
+          <div style="background: rgba(255, 255, 255, 0.05); padding: 12px 20px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); margin-top: 8px; max-width: 400px; width: 100%;">
+            <p style="font-size: 13px; color: rgba(255, 255, 255, 0.85); margin: 0;">Recipient: <strong style="color: #ffffff;">Shaik Mohammad Hafruddin</strong></p>
+            <p id="placeholderCertId" style="font-size: 12px; font-family: 'Share Tech Mono', monospace; color: rgba(255, 255, 255, 0.6); margin: 6px 0 0 0;">Status: Official Verified Credential</p>
+          </div>
+        </div>
+      </div>
+      <div class="cert-modal-footer">
+        <div>
+          <span id="certModalCredId" style="color: #ff5500; margin-right: 12px; display: none;"></span>
+          <span id="certModalIssuer" style="color: rgba(255, 255, 255, 0.5); display: none;"></span>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <a id="certModalOpenTab" href="#" target="_blank" rel="noopener noreferrer" class="btn-orange" style="padding: 6px 14px; font-size: 12px; text-decoration: none; border-radius: 6px; display: none;">
+            Open Full Size ↗
+          </a>
+          <button onclick="closeCertModal()" class="btn-pill-dark" style="padding: 6px 14px; font-size: 12px; border-radius: 6px; background: rgba(255, 255, 255, 0.08); color: #ffffff; cursor: pointer;">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openCertModal(title, imageSrc, credentialId, issuer) {
+      const modal = document.getElementById('certModal');
+      const modalTitle = document.getElementById('certModalTitle');
+      const modalImg = document.getElementById('certModalImg');
+      const modalPlaceholder = document.getElementById('certModalPlaceholder');
+      const openTabBtn = document.getElementById('certModalOpenTab');
+      const credIdElem = document.getElementById('certModalCredId');
+      const issuerElem = document.getElementById('certModalIssuer');
+
+      modalTitle.textContent = title;
+
+      if (imageSrc) {
+        modalImg.src = imageSrc;
+        modalImg.alt = title;
+        modalImg.style.display = 'block';
+        modalPlaceholder.style.display = 'none';
+        openTabBtn.href = imageSrc;
+        openTabBtn.style.display = 'inline-flex';
+      } else {
+        modalImg.style.display = 'none';
+        modalPlaceholder.style.display = 'flex';
+        openTabBtn.style.display = 'none';
+        document.getElementById('placeholderCertTitle').textContent = title;
+        document.getElementById('placeholderCertIssuer').textContent = issuer || 'Verified Issuer';
+        document.getElementById('placeholderCertId').textContent = credentialId ? 'ID / Code: ' + credentialId : 'Official Verified Credential';
+      }
+
+      if (credentialId) {
+        credIdElem.textContent = 'ID: ' + credentialId;
+        credIdElem.style.display = 'inline-block';
+      } else {
+        credIdElem.style.display = 'none';
+      }
+
+      if (issuerElem && issuer) {
+        issuerElem.textContent = '• ' + issuer;
+        issuerElem.style.display = 'inline-block';
+      } else if (issuerElem) {
+        issuerElem.style.display = 'none';
+      }
+
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+      const modal = document.getElementById('certModal');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeCertModal();
+      }
+    });
+
+    const certModalEl = document.getElementById('certModal');
+    if (certModalEl) {
+      certModalEl.addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeCertModal();
+        }
+      });
+    }
   </script>
 </body>
 
