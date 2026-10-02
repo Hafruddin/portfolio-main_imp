@@ -1653,6 +1653,8 @@
     .hero-badge:hover {
       background: #ff5500;
       color: #000000;
+    }
+
     /* ==========================================================================
        CERTIFICATE LIGHTBOX & EYE BUTTON STYLES
        ========================================================================== */
@@ -1722,6 +1724,10 @@
       border-color: #ff5500;
     }
 
+    .cert-eye-btn svg {
+      pointer-events: none;
+    }
+
     .cert-modal {
       position: fixed;
       top: 0;
@@ -1741,8 +1747,9 @@
     }
 
     .cert-modal.active {
-      display: flex;
-      opacity: 1;
+      display: flex !important;
+      opacity: 1 !important;
+      visibility: visible !important;
     }
 
     .cert-modal-dialog {
