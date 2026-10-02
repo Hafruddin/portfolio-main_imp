@@ -1838,6 +1838,30 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     }
 
+    .cert-loader-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 60px 20px;
+    }
+
+    .cert-spinner {
+      width: 44px;
+      height: 44px;
+      border: 3px solid rgba(255, 85, 0, 0.2);
+      border-top-color: #ff5500;
+      border-radius: 50%;
+      animation: certSpin 0.75s linear infinite;
+    }
+
+    @keyframes certSpin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
     .cert-placeholder-card {
       padding: 40px 24px;
       text-align: center;
@@ -2483,7 +2507,7 @@
           <div>
             <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
               <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Java Full-Stack Developer Intern</h3>
-              <button class="cert-eye-btn" onclick="openCertModal('internship-charani')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('internship-charani')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </div>
@@ -2514,7 +2538,7 @@
           <div>
             <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
               <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Artificial Intelligence Intern</h3>
-              <button class="cert-eye-btn" onclick="openCertModal('internship-codsoft')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('internship-codsoft')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </div>
@@ -2545,7 +2569,7 @@
           <div>
             <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
               <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Python Programming Intern</h3>
-              <button class="cert-eye-btn" onclick="openCertModal('internship-codealpha')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('internship-codealpha')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </div>
@@ -2576,7 +2600,7 @@
           <div>
             <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
               <h3 style="font-size: 24px; font-weight: 700; color: #ffffff;">Web Development &amp; Designing Intern</h3>
-              <button class="cert-eye-btn" onclick="openCertModal('internship-oasis')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('internship-oasis')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </div>
@@ -2618,7 +2642,7 @@
                 <span class="cert-item-bullet">✦</span>
                 Oracle Database SQL Certified Associate
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('oracle-sql')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('oracle-sql')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2628,7 +2652,7 @@
                 <span class="cert-item-bullet">✦</span>
                 Oracle Certified Associate – Agentic AI Foundations
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('oracle-agentic-ai')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('oracle-agentic-ai')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2638,7 +2662,7 @@
                 <span class="cert-item-bullet">✦</span>
                 Oracle Certified Professional – Generative AI
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('oracle-genai')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('oracle-genai')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2648,7 +2672,7 @@
                 <span class="cert-item-bullet">✦</span>
                 Oracle Cloud Infrastructure Foundations
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('oracle-oci-foundations')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('oracle-oci-foundations')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2658,7 +2682,7 @@
                 <span class="cert-item-bullet">✦</span>
                 Oracle Fusion AI Agent Studio Certified Foundations Associate
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('oracle-fusion-ai')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('oracle-fusion-ai')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2668,7 +2692,7 @@
                 <span class="cert-item-bullet">✦</span>
                 Oracle APEX Cloud Developer Certified Professional
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('oracle-apex-developer')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('oracle-apex-developer')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2678,7 +2702,7 @@
                 <span class="cert-item-bullet">✦</span>
                 NPTEL Elite Certification – Industry 4.0 & IIoT (IIT Kharagpur)
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('nptel-industry4')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('nptel-industry4')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2688,7 +2712,7 @@
                 <span class="cert-item-bullet">✦</span>
                 TCS iON Career Edge – Young Professional
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('tcs-ion-career-edge')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('tcs-ion-career-edge')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2698,7 +2722,7 @@
                 <span class="cert-item-bullet">✦</span>
                 be10x – AI Tools & ChatGPT Workshop
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('be10x-ai')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('be10x-ai')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2708,7 +2732,7 @@
                 <span class="cert-item-bullet">✦</span>
                 HP LIFE – AI for Beginners
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('hp-life-ai')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('hp-life-ai')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2718,7 +2742,7 @@
                 <span class="cert-item-bullet">✦</span>
                 School of Leadership – Internship Bootcamp (StartupIndia & MSME)
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('school-of-leadership')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('school-of-leadership')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2728,7 +2752,7 @@
                 <span class="cert-item-bullet">✦</span>
                 Simplilearn SkillUp – Introduction to Artificial Intelligence
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('simplilearn-ai')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('simplilearn-ai')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2738,7 +2762,7 @@
                 <span class="cert-item-bullet">✦</span>
                 Infosys Springboard – Programming Using C++
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('infosys-cpp')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('infosys-cpp')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2748,7 +2772,7 @@
                 <span class="cert-item-bullet">✦</span>
                 NPTEL Online Certification – Data Base Management System (IIT Kharagpur)
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('nptel-dbms')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('nptel-dbms')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -2758,7 +2782,7 @@
                 <span class="cert-item-bullet">✦</span>
                 NPTEL Online Certification – Soft Skill Development
               </span>
-              <button class="cert-eye-btn" onclick="openCertModal('nptel-soft-skills')" title="View Certificate" aria-label="View Certificate">
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('nptel-soft-skills')" title="View Certificate" aria-label="View Certificate">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </button>
             </li>
@@ -3136,6 +3160,10 @@
         <button class="cert-modal-close" onclick="closeCertModal()" aria-label="Close Certificate View">&times;</button>
       </div>
       <div class="cert-modal-body">
+        <div id="certModalLoader" class="cert-loader-wrap" style="display: none;">
+          <div class="cert-spinner"></div>
+          <span style="font-size: 13px; color: rgba(255,255,255,0.7); font-family: 'Share Tech Mono', monospace;">Loading Certificate...</span>
+        </div>
         <img id="certModalImg" src="" alt="Certificate Preview" style="display: none;" />
         <div id="certModalPlaceholder" class="cert-placeholder-card" style="display: none;">
           <div style="width: 68px; height: 68px; border-radius: 50%; background: rgba(255, 85, 0, 0.15); border: 2px solid #ff5500; display: flex; align-items: center; justify-content: center; font-size: 28px; margin-bottom: 8px;">
@@ -3287,10 +3315,29 @@
       }
     };
 
+    function preloadCertificateImages() {
+      if (window.__certImagesPreloaded) return;
+      window.__certImagesPreloaded = true;
+      Object.keys(CERTIFICATE_DATA).forEach(function(k) {
+        var item = CERTIFICATE_DATA[k];
+        if (item && item.image) {
+          var img = new Image();
+          img.src = item.image;
+        }
+      });
+    }
+
+    if (document.readyState === 'complete') {
+      preloadCertificateImages();
+    } else {
+      window.addEventListener('load', preloadCertificateImages);
+    }
+
     function openCertModal(keyOrTitle, imageSrc, credentialId, issuer) {
       const modal = document.getElementById('certModal');
       const modalTitle = document.getElementById('certModalTitle');
       const modalImg = document.getElementById('certModalImg');
+      const modalLoader = document.getElementById('certModalLoader');
       const modalPlaceholder = document.getElementById('certModalPlaceholder');
       const openTabBtn = document.getElementById('certModalOpenTab');
       const credIdElem = document.getElementById('certModalCredId');
@@ -3305,13 +3352,35 @@
       modalTitle.textContent = title;
 
       if (finalImg) {
-        modalImg.src = finalImg;
-        modalImg.alt = title;
-        modalImg.style.display = 'block';
+        // Reset state
+        modalImg.style.display = 'none';
         modalPlaceholder.style.display = 'none';
+        if (modalLoader) modalLoader.style.display = 'flex';
+
         openTabBtn.href = finalImg;
         openTabBtn.style.display = 'inline-flex';
+
+        modalImg.onload = function() {
+          if (modalLoader) modalLoader.style.display = 'none';
+          modalImg.style.display = 'block';
+        };
+
+        modalImg.onerror = function() {
+          if (modalLoader) modalLoader.style.display = 'none';
+          modalImg.style.display = 'none';
+          modalPlaceholder.style.display = 'flex';
+        };
+
+        modalImg.src = finalImg;
+        modalImg.alt = title;
+
+        // If already cached and loaded
+        if (modalImg.complete && modalImg.naturalWidth > 0) {
+          if (modalLoader) modalLoader.style.display = 'none';
+          modalImg.style.display = 'block';
+        }
       } else {
+        if (modalLoader) modalLoader.style.display = 'none';
         modalImg.style.display = 'none';
         modalPlaceholder.style.display = 'flex';
         openTabBtn.style.display = 'none';
