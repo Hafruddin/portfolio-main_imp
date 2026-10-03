@@ -2098,7 +2098,7 @@
             <div class="stat-line"></div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">15</div>
+            <div class="stat-number">16</div>
             <div class="stat-label">
               <span class="dot-orange"></span> Professional Certifications
             </div>
@@ -2219,6 +2219,7 @@
             <span class="skill-pill">Embeddings</span>
             <span class="skill-pill">Multi-Agent Systems</span>
             <span class="skill-pill">AI App Development</span>
+            <span class="skill-pill">SAP Business AI</span>
           </div>
         </div>
 
@@ -2637,6 +2638,16 @@
             style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #ff5500; text-transform: uppercase; margin-bottom: 20px; font-family: 'Share Tech Mono', monospace;">
             Professional Certifications</h4>
           <ul class="cert-list">
+            <li class="cert-item">
+              <span class="cert-item-text">
+                <span class="cert-item-bullet">✦</span>
+                SAP Certified – Positioning SAP Business AI Platform
+              </span>
+              <button type="button" class="cert-eye-btn" onclick="openCertModal('sap-business-ai')" title="View Certificate" aria-label="View Certificate">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </button>
+            </li>
+
             <li class="cert-item">
               <span class="cert-item-text">
                 <span class="cert-item-bullet">✦</span>
@@ -3183,6 +3194,9 @@
           <span id="certModalIssuer" style="color: rgba(255, 255, 255, 0.5); display: none;"></span>
         </div>
         <div style="display: flex; gap: 10px; align-items: center;">
+          <a id="certModalVerifyBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-pill-dark" style="padding: 6px 14px; font-size: 12px; text-decoration: none; border-radius: 6px; background: rgba(255, 85, 0, 0.15); border: 1px solid rgba(255, 85, 0, 0.4); color: #ff5500; display: none;">
+            Verify on Credly ↗
+          </a>
           <a id="certModalOpenTab" href="#" target="_blank" rel="noopener noreferrer" class="btn-orange" style="padding: 6px 14px; font-size: 12px; text-decoration: none; border-radius: 6px; display: none;">
             Open Full Size ↗
           </a>
@@ -3197,6 +3211,13 @@
   <script>
     const CERTIFICATE_DATA = {
       // Professional Certifications
+      'sap-business-ai': {
+        title: 'SAP Certified – Positioning SAP Business AI Platform',
+        issuer: 'SAP',
+        credId: '4c8ab7c5-c1ab-4c98-8ea2-af062140cc40',
+        image: './images/certificates/sap_business_ai.png',
+        verifyUrl: 'https://www.credly.com/badges/4c8ab7c5-c1ab-4c98-8ea2-af062140cc40'
+      },
       'oracle-sql': {
         title: 'Oracle Database SQL Certified Associate',
         issuer: 'Oracle Corporation',
@@ -3403,12 +3424,24 @@
         issuerElem.style.display = 'none';
       }
 
+      const verifyBtn = document.getElementById('certModalVerifyBtn');
+      if (verifyBtn) {
+        if (cert && cert.verifyUrl) {
+          verifyBtn.href = cert.verifyUrl;
+          verifyBtn.style.display = 'inline-flex';
+        } else {
+          verifyBtn.style.display = 'none';
+        }
+      }
+
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
 
     function closeCertModal() {
       const modal = document.getElementById('certModal');
+      const verifyBtn = document.getElementById('certModalVerifyBtn');
+      if (verifyBtn) verifyBtn.style.display = 'none';
       if (modal) {
         modal.classList.remove('active');
         document.body.style.overflow = '';
